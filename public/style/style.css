@@ -1,0 +1,194 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#username-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#username-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+#username-form button {
+    padding: 10px 20px;
+    background-color: #3182ce;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 350px;
+    transition: background-color 0.3s ease;
+}
+
+#username-form button:hover {
+    background-color: #2b6cb0;
+}
+
+#gameCanvas {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    background-color: #fafafa;
+    display: block;
+}
+
+#leaderboard {
+    margin-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#leaderboard h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#leaderboard-list li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #username-form input,
+    #username-form button {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #username-form h2 {
+        font-size: 1.4rem;
+    }
+
+    #leaderboard h2 {
+        font-size: 1.6rem;
+    }
+
+    #leaderboard-list li {
+        font-size: 1rem;
+    }
+}
+
+
+  #gameCanvas {
+    display: block;
+    background: #f0f0f0;
+  }
+
+#control-buttons {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #control-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+}
+
+.btn-row {
+    display: flex;
+    gap: 10px;
+}
+
+.control-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn:active {
+    background-color: #0056b3;
+}
+
+  
+  
+  #username-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }

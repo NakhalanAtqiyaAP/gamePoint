@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "skor-game-web",
+    "skor-game-web": "skor-game-web"
+  },
+  "targets": {},
+  "etags": {}
+}

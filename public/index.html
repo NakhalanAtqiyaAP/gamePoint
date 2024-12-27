@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/output.css">
+    <script type="module" src="./config/firebaseConfig.js"></script>
+    <script type="module" src="./js/gamescript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GameSkor</title>
+</head>
+<body>
+    <div id="username-form">
+        <h2>Masukkan Nama Pengguna untuk Mulai Bermain</h2>
+        <input type="text" id="username" placeholder="Masukkan Username" />
+        <button id="start-game">Mulai Game</button>
+    </div>
+        
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+<div id="control-buttons" style="display: none;">
+    <div class="btn-row">
+    <button id="btn-up" class="control-btn">⬆</button>
+    </div>
+    <div class="btn-row">
+    <button id="btn-left" class="control-btn">⬅</button>
+    <button id="btn-right" class="control-btn">➡</button>
+    </div>
+    <div class="btn-row">
+    <button id="btn-down" class="control-btn">⬇</button>
+    </div>
+</div>
+
+    <div id="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+    </div>
+
+</body>
+</html>
